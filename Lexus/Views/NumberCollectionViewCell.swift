@@ -11,7 +11,7 @@ import SwifterSwift
 import SnapKit
 class NumberCollectionViewCell: UICollectionViewCell {
     
-    public func set(item : NumberItem){
+    public func set(item : LotteryItem){
         self.title.text = item.text
         
         if item.selected {

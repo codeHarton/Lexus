@@ -1,6 +1,10 @@
 PODS:
   - Alamofire (5.4.1)
+  - Charts (3.6.0):
+    - Charts/Core (= 3.6.0)
+  - Charts/Core (3.6.0)
   - Differentiator (4.0.1)
+  - FDFullscreenPopGesture (1.1)
   - HandyJSON (5.0.2)
   - Kingfisher (6.0.1)
   - MMKV (1.2.7):
@@ -11,6 +15,7 @@ PODS:
   - Moya/RxSwift (14.0.0):
     - Moya/Core
     - RxSwift (~> 5.0)
+  - pop (1.0.12)
   - QMUIKit (4.2.1):
     - QMUIKit/QMUIComponents (= 4.2.1)
     - QMUIKit/QMUICore (= 4.2.1)
@@ -328,6 +333,11 @@ PODS:
     - QMUIKit/QMUILog
   - QMUIKit/QMUIResources (4.2.1)
   - QMUIKit/QMUIWeakObjectContainer (4.2.1)
+  - Realm (5.0.3):
+    - Realm/Headers (= 5.0.3)
+  - Realm/Headers (5.0.3)
+  - RealmSwift (5.0.3):
+    - Realm (= 5.0.3)
   - RxCocoa (5.1.1):
     - RxRelay (~> 5)
     - RxSwift (~> 5)
@@ -370,11 +380,15 @@ PODS:
   - YYKit/no-arc (1.0.9)
 
 DEPENDENCIES:
+  - Charts
+  - FDFullscreenPopGesture
   - HandyJSON (~> 5.0.1)
   - Kingfisher (~> 6.0.1)
   - MMKV
   - Moya/RxSwift (~> 14.0)
+  - pop
   - QMUIKit (from `https://github.com/codeHarton/QMUI_iOS.git`)
+  - RealmSwift (~> 5.0.0)
   - RxDataSources
   - RxSwift
   - SnapKit
@@ -385,12 +399,17 @@ DEPENDENCIES:
 SPEC REPOS:
   https://github.com/CocoaPods/Specs.git:
     - Alamofire
+    - Charts
     - Differentiator
+    - FDFullscreenPopGesture
     - HandyJSON
     - Kingfisher
     - MMKV
     - MMKVCore
     - Moya
+    - pop
+    - Realm
+    - RealmSwift
     - RxCocoa
     - RxDataSources
     - RxRelay
@@ -411,13 +430,18 @@ CHECKOUT OPTIONS:
 
 SPEC CHECKSUMS:
   Alamofire: 2291f7d21ca607c491dd17642e5d40fdcda0e65c
+  Charts: b1e3a1f5a1c9ba5394438ca3b91bd8c9076310af
   Differentiator: 886080237d9f87f322641dedbc5be257061b0602
+  FDFullscreenPopGesture: a8a620179e3d9c40e8e00256dcee1c1a27c6d0f0
   HandyJSON: 9e4e236f5d2dbefad5155a77417bbea438201c03
   Kingfisher: adde87a4f74f6a3845395769354efff593581740
   MMKV: 22e5136f7d00197bc0fc9694b7f71519f0d1ca12
   MMKVCore: 607b7b05f2c2140056b5d338e45f2c14bf3f4232
   Moya: 5b45dacb75adb009f97fde91c204c1e565d31916
+  pop: d582054913807fd11fd50bfe6a539d91c7e1a55a
   QMUIKit: 15294d6a350466e4a6f4df0333eac5bff474f995
+  Realm: bfca1699b61b0b17c3a69ae0e648314eae91fbdb
+  RealmSwift: 493c9f089cd3893b3959007973c0e4f640906ba0
   RxCocoa: 32065309a38d29b5b0db858819b5bf9ef038b601
   RxDataSources: efee07fa4de48477eca0a4611e6d11e2da9c1114
   RxRelay: d77f7d771495f43c556cbc43eebd1bb54d01e8e9
@@ -427,6 +451,6 @@ SPEC CHECKSUMS:
   SwiftyJSON: 36413e04c44ee145039d332b4f4e2d3e8d6c4db7
   YYKit: 7cda43304a8dc3696c449041e2cb3107b4e236e7
 
-PODFILE CHECKSUM: 8f5a01759aa59953184059ddbbe3cd91c2e46bcc
+PODFILE CHECKSUM: efd300ad06ffc26fa1ffb40cade1e11cdf2a4d0b
 
 COCOAPODS: 1.8.4
