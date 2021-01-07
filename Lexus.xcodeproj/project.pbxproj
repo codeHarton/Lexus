@@ -3,19 +3,27 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D97CC7F5C35F1D75BFA923C8 /* Pods_Lexus.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB33CCCFF32C494668C5718B /* Pods_Lexus.framework */; };
 		F41B44EE25A5B8F7000C0973 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F41B44ED25A5B8F7000C0973 /* AppDelegate.swift */; };
 		F41B44F025A5B8F7000C0973 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F41B44EF25A5B8F7000C0973 /* SceneDelegate.swift */; };
 		F41B44F225A5B8F7000C0973 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F41B44F125A5B8F7000C0973 /* ViewController.swift */; };
 		F41B44F525A5B8F7000C0973 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F41B44F325A5B8F7000C0973 /* Main.storyboard */; };
 		F41B44F725A5B8F9000C0973 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F41B44F625A5B8F9000C0973 /* Assets.xcassets */; };
 		F41B44FA25A5B8F9000C0973 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F41B44F825A5B8F9000C0973 /* LaunchScreen.storyboard */; };
+		F41B451325A5BB44000C0973 /* HistoryTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F41B451225A5BB44000C0973 /* HistoryTableViewController.swift */; };
+		F41B451625A5BB6E000C0973 /* OneAndOneTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F41B451525A5BB6E000C0973 /* OneAndOneTableViewController.swift */; };
+		F41B453625A5BD94000C0973 /* NumberCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F41B453525A5BD94000C0973 /* NumberCollectionViewCell.swift */; };
+		F41B453A25A5BE92000C0973 /* UIConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = F41B453925A5BE92000C0973 /* UIConstant.swift */; };
+		F41B455025A5C13F000C0973 /* NumberItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = F41B454F25A5C13F000C0973 /* NumberItem.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		BB33CCCFF32C494668C5718B /* Pods_Lexus.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Lexus.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C35D172655E6CFB644F65138 /* Pods-Lexus.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Lexus.release.xcconfig"; path = "Target Support Files/Pods-Lexus/Pods-Lexus.release.xcconfig"; sourceTree = "<group>"; };
 		F41B44EA25A5B8F7000C0973 /* Lexus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Lexus.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F41B44ED25A5B8F7000C0973 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F41B44EF25A5B8F7000C0973 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +32,12 @@
 		F41B44F625A5B8F9000C0973 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F41B44F925A5B8F9000C0973 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F41B44FB25A5B8F9000C0973 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F41B451225A5BB44000C0973 /* HistoryTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryTableViewController.swift; sourceTree = "<group>"; };
+		F41B451525A5BB6E000C0973 /* OneAndOneTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OneAndOneTableViewController.swift; sourceTree = "<group>"; };
+		F41B453525A5BD94000C0973 /* NumberCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberCollectionViewCell.swift; sourceTree = "<group>"; };
+		F41B453925A5BE92000C0973 /* UIConstant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIConstant.swift; sourceTree = "<group>"; };
+		F41B454F25A5C13F000C0973 /* NumberItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberItem.swift; sourceTree = "<group>"; };
+		FDDBF76B80E040204F247FF5 /* Pods-Lexus.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Lexus.debug.xcconfig"; path = "Target Support Files/Pods-Lexus/Pods-Lexus.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +45,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D97CC7F5C35F1D75BFA923C8 /* Pods_Lexus.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		474CB9A66F7751745D511E77 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FDDBF76B80E040204F247FF5 /* Pods-Lexus.debug.xcconfig */,
+				C35D172655E6CFB644F65138 /* Pods-Lexus.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		D095844FDEC164573B37D372 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BB33CCCFF32C494668C5718B /* Pods_Lexus.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		F41B44E125A5B8F7000C0973 = {
 			isa = PBXGroup;
 			children = (
 				F41B44EC25A5B8F7000C0973 /* Lexus */,
 				F41B44EB25A5B8F7000C0973 /* Products */,
+				474CB9A66F7751745D511E77 /* Pods */,
+				D095844FDEC164573B37D372 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -59,12 +93,25 @@
 				F41B44ED25A5B8F7000C0973 /* AppDelegate.swift */,
 				F41B44EF25A5B8F7000C0973 /* SceneDelegate.swift */,
 				F41B44F125A5B8F7000C0973 /* ViewController.swift */,
+				F41B451225A5BB44000C0973 /* HistoryTableViewController.swift */,
+				F41B451525A5BB6E000C0973 /* OneAndOneTableViewController.swift */,
+				F41B453925A5BE92000C0973 /* UIConstant.swift */,
+				F41B454F25A5C13F000C0973 /* NumberItem.swift */,
+				F41B453425A5BD74000C0973 /* Views */,
 				F41B44F325A5B8F7000C0973 /* Main.storyboard */,
 				F41B44F625A5B8F9000C0973 /* Assets.xcassets */,
 				F41B44F825A5B8F9000C0973 /* LaunchScreen.storyboard */,
 				F41B44FB25A5B8F9000C0973 /* Info.plist */,
 			);
 			path = Lexus;
+			sourceTree = "<group>";
+		};
+		F41B453425A5BD74000C0973 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F41B453525A5BD94000C0973 /* NumberCollectionViewCell.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +121,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F41B44FE25A5B8F9000C0973 /* Build configuration list for PBXNativeTarget "Lexus" */;
 			buildPhases = (
+				B3C17C74865BED0FBCECC397 /* [CP] Check Pods Manifest.lock */,
 				F41B44E625A5B8F7000C0973 /* Sources */,
 				F41B44E725A5B8F7000C0973 /* Frameworks */,
 				F41B44E825A5B8F7000C0973 /* Resources */,
+				51F00117E24EDD432A02C39A /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -132,11 +181,58 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		51F00117E24EDD432A02C39A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Lexus/Pods-Lexus-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Lexus/Pods-Lexus-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Lexus/Pods-Lexus-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B3C17C74865BED0FBCECC397 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Lexus-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		F41B44E625A5B8F7000C0973 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F41B453A25A5BE92000C0973 /* UIConstant.swift in Sources */,
+				F41B451625A5BB6E000C0973 /* OneAndOneTableViewController.swift in Sources */,
+				F41B453625A5BD94000C0973 /* NumberCollectionViewCell.swift in Sources */,
+				F41B455025A5C13F000C0973 /* NumberItem.swift in Sources */,
+				F41B451325A5BB44000C0973 /* HistoryTableViewController.swift in Sources */,
 				F41B44F225A5B8F7000C0973 /* ViewController.swift in Sources */,
 				F41B44EE25A5B8F7000C0973 /* AppDelegate.swift in Sources */,
 				F41B44F025A5B8F7000C0973 /* SceneDelegate.swift in Sources */,
@@ -283,6 +379,7 @@
 		};
 		F41B44FF25A5B8F9000C0973 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FDDBF76B80E040204F247FF5 /* Pods-Lexus.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -302,6 +399,7 @@
 		};
 		F41B450025A5B8F9000C0973 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C35D172655E6CFB644F65138 /* Pods-Lexus.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

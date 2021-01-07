@@ -1,0 +1,6 @@
+framework module Pods_Lexus {
+  umbrella header "Pods-Lexus-umbrella.h"
+
+  export *
+  module * { export * }
+}
