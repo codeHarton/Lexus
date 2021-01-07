@@ -57,13 +57,7 @@ extension sectionItem{
     }
     ///添加一个随机数
     private func addRandomValue(){
-        var value = dotType.randomValue
-        var item = self[value - 1]
-        while item.selected {
-            value = dotType.randomValue
-            item = self[value - 1]
-        }
-        item.selected = true
+        self.filter{!$0.selected}.randomElement()?.selected = true
     }
     
     func enough() ->Bool{
