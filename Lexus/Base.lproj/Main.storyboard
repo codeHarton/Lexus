@@ -9,10 +9,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Super Lotto View Controller-->
+        <!--Lottery View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController restorationIdentifier="SuperLottoViewController" storyboardIdentifier="SuperLottoViewController" id="BYZ-38-t0r" customClass="SuperLottoViewController" customModule="Lexus" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController restorationIdentifier="SuperLottoViewController" storyboardIdentifier="SuperLottoViewController" id="BYZ-38-t0r" customClass="LotteryViewController" customModule="Lexus" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -52,11 +52,23 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="jFF-UY-foL">
-                        <barButtonItem key="rightBarButtonItem" systemItem="refresh" id="Fa2-Je-Lsc">
-                            <connections>
-                                <action selector="reload" destination="BYZ-38-t0r" id="l9q-oo-AdA"/>
-                            </connections>
-                        </barButtonItem>
+                        <rightBarButtonItems>
+                            <barButtonItem systemItem="refresh" id="Fa2-Je-Lsc">
+                                <connections>
+                                    <action selector="reload" destination="BYZ-38-t0r" id="l9q-oo-AdA"/>
+                                </connections>
+                            </barButtonItem>
+                            <barButtonItem systemItem="fastForward" id="pfB-oq-Mx5">
+                                <connections>
+                                    <action selector="fastRandom" destination="BYZ-38-t0r" id="eEk-r4-ISR"/>
+                                </connections>
+                            </barButtonItem>
+                            <barButtonItem systemItem="organize" id="bvW-O6-TKR">
+                                <connections>
+                                    <action selector="statistics" destination="BYZ-38-t0r" id="Ucj-70-XcL"/>
+                                </connections>
+                            </barButtonItem>
+                        </rightBarButtonItems>
                     </navigationItem>
                     <connections>
                         <outlet property="collectionView" destination="CQL-HF-EpC" id="PCx-c7-HS4"/>
@@ -64,7 +76,23 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2429" y="-347"/>
+            <point key="canvasLocation" x="2141" y="60"/>
+        </scene>
+        <!--Experiment View Controller-->
+        <scene sceneID="IIa-rf-ZZg">
+            <objects>
+                <viewController id="khr-Hq-kEz" customClass="ExperimentViewController" customModule="Lexus" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="dRl-q7-rTP">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="Owd-Cr-rPe"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="z90-KX-ltN"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uUK-CE-5eE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2865" y="-348"/>
         </scene>
         <!--History Table View Controller-->
         <scene sceneID="AbM-mC-IIM">
@@ -181,7 +209,8 @@
                     </collectionView>
                     <navigationItem key="navigationItem" id="Ay4-Go-Huc"/>
                     <connections>
-                        <segue destination="BYZ-38-t0r" kind="push" identifier="SuperLottoViewController" id="8N2-HK-REB"/>
+                        <segue destination="BYZ-38-t0r" kind="push" identifier="LotteryViewController" id="8N2-HK-REB"/>
+                        <segue destination="khr-Hq-kEz" kind="show" identifier="home_research" id="dbb-A7-vuh"/>
                     </connections>
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gmJ-Mp-oah" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

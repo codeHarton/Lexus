@@ -10,17 +10,25 @@
 		D97CC7F5C35F1D75BFA923C8 /* Pods_Lexus.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB33CCCFF32C494668C5718B /* Pods_Lexus.framework */; };
 		F41B44EE25A5B8F7000C0973 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F41B44ED25A5B8F7000C0973 /* AppDelegate.swift */; };
 		F41B44F025A5B8F7000C0973 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F41B44EF25A5B8F7000C0973 /* SceneDelegate.swift */; };
-		F41B44F225A5B8F7000C0973 /* SuperLottoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F41B44F125A5B8F7000C0973 /* SuperLottoViewController.swift */; };
+		F41B44F225A5B8F7000C0973 /* LotteryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F41B44F125A5B8F7000C0973 /* LotteryViewController.swift */; };
 		F41B44F525A5B8F7000C0973 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F41B44F325A5B8F7000C0973 /* Main.storyboard */; };
 		F41B44F725A5B8F9000C0973 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F41B44F625A5B8F9000C0973 /* Assets.xcassets */; };
 		F41B44FA25A5B8F9000C0973 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F41B44F825A5B8F9000C0973 /* LaunchScreen.storyboard */; };
-		F41B451325A5BB44000C0973 /* HistoryTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F41B451225A5BB44000C0973 /* HistoryTableViewController.swift */; };
 		F41B451625A5BB6E000C0973 /* OneAndOneTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F41B451525A5BB6E000C0973 /* OneAndOneTableViewController.swift */; };
 		F41B453625A5BD94000C0973 /* NumberCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F41B453525A5BD94000C0973 /* NumberCollectionViewCell.swift */; };
 		F41B453A25A5BE92000C0973 /* UIConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = F41B453925A5BE92000C0973 /* UIConstant.swift */; };
 		F46799A925A69A7300FF3BDE /* HomeCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F46799A825A69A7300FF3BDE /* HomeCollectionViewController.swift */; };
 		F46799AF25A69B7D00FF3BDE /* HomeItemCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F46799AE25A69B7D00FF3BDE /* HomeItemCollectionViewCell.swift */; };
 		F46799B325A69C6400FF3BDE /* HomeAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F46799B225A69C6400FF3BDE /* HomeAdapter.swift */; };
+		F4B61E3825A7F332005FC901 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4B61E3725A7F332005FC901 /* BaseViewController.swift */; };
+		F4B61E3C25A7F3A1005FC901 /* HistoryTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4B61E3B25A7F3A1005FC901 /* HistoryTableViewController.swift */; };
+		F4B61E5C25A7F76E005FC901 /* ExperimentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4B61E5B25A7F76E005FC901 /* ExperimentViewController.swift */; };
+		F4B61E6025A7F7CF005FC901 /* BaseTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4B61E5F25A7F7CF005FC901 /* BaseTableViewController.swift */; };
+		F4B61E6325A7FE3F005FC901 /* BaseCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4B61E6225A7FE3F005FC901 /* BaseCollectionViewCell.swift */; };
+		F4B61E6625A7FE59005FC901 /* BaseTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4B61E6525A7FE59005FC901 /* BaseTableViewCell.swift */; };
+		F4B61E6925A7FE79005FC901 /* CellProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4B61E6825A7FE79005FC901 /* CellProtocol.swift */; };
+		F4B61E6C25A7FEFD005FC901 /* BaseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4B61E6B25A7FEFD005FC901 /* BaseModel.swift */; };
+		F4B61E6F25A7FF73005FC901 /* MostViewedCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4B61E6E25A7FF73005FC901 /* MostViewedCollectionViewCell.swift */; };
 		F4D0F58125A6AC5300D90E78 /* HomeBillItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4D0F58025A6AC5300D90E78 /* HomeBillItem.swift */; };
 		F4D0F59C25A6CFF600D90E78 /* MyNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4D0F59B25A6CFF600D90E78 /* MyNavigationController.swift */; };
 		F4D0F5A225A6D08400D90E78 /* UIKit+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4D0F5A125A6D08400D90E78 /* UIKit+Extension.swift */; };
@@ -36,18 +44,26 @@
 		F41B44EA25A5B8F7000C0973 /* Lexus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Lexus.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F41B44ED25A5B8F7000C0973 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F41B44EF25A5B8F7000C0973 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		F41B44F125A5B8F7000C0973 /* SuperLottoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuperLottoViewController.swift; sourceTree = "<group>"; };
+		F41B44F125A5B8F7000C0973 /* LotteryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LotteryViewController.swift; sourceTree = "<group>"; };
 		F41B44F425A5B8F7000C0973 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F41B44F625A5B8F9000C0973 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F41B44F925A5B8F9000C0973 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F41B44FB25A5B8F9000C0973 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F41B451225A5BB44000C0973 /* HistoryTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = HistoryTableViewController.swift; path = "../New Group/HistoryTableViewController.swift"; sourceTree = "<group>"; };
 		F41B451525A5BB6E000C0973 /* OneAndOneTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OneAndOneTableViewController.swift; sourceTree = "<group>"; };
 		F41B453525A5BD94000C0973 /* NumberCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberCollectionViewCell.swift; sourceTree = "<group>"; };
 		F41B453925A5BE92000C0973 /* UIConstant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIConstant.swift; sourceTree = "<group>"; };
 		F46799A825A69A7300FF3BDE /* HomeCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCollectionViewController.swift; sourceTree = "<group>"; };
 		F46799AE25A69B7D00FF3BDE /* HomeItemCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeItemCollectionViewCell.swift; sourceTree = "<group>"; };
 		F46799B225A69C6400FF3BDE /* HomeAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeAdapter.swift; sourceTree = "<group>"; };
+		F4B61E3725A7F332005FC901 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		F4B61E3B25A7F3A1005FC901 /* HistoryTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryTableViewController.swift; sourceTree = "<group>"; };
+		F4B61E5B25A7F76E005FC901 /* ExperimentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExperimentViewController.swift; sourceTree = "<group>"; };
+		F4B61E5F25A7F7CF005FC901 /* BaseTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTableViewController.swift; sourceTree = "<group>"; };
+		F4B61E6225A7FE3F005FC901 /* BaseCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseCollectionViewCell.swift; sourceTree = "<group>"; };
+		F4B61E6525A7FE59005FC901 /* BaseTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTableViewCell.swift; sourceTree = "<group>"; };
+		F4B61E6825A7FE79005FC901 /* CellProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellProtocol.swift; sourceTree = "<group>"; };
+		F4B61E6B25A7FEFD005FC901 /* BaseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseModel.swift; sourceTree = "<group>"; };
+		F4B61E6E25A7FF73005FC901 /* MostViewedCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MostViewedCollectionViewCell.swift; sourceTree = "<group>"; };
 		F4D0F58025A6AC5300D90E78 /* HomeBillItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeBillItem.swift; sourceTree = "<group>"; };
 		F4D0F59B25A6CFF600D90E78 /* MyNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyNavigationController.swift; sourceTree = "<group>"; };
 		F4D0F5A125A6D08400D90E78 /* UIKit+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIKit+Extension.swift"; sourceTree = "<group>"; };
@@ -113,10 +129,8 @@
 				F41B44EF25A5B8F7000C0973 /* SceneDelegate.swift */,
 				F41B451525A5BB6E000C0973 /* OneAndOneTableViewController.swift */,
 				F41B453925A5BE92000C0973 /* UIConstant.swift */,
-				F4D0F5A525A6D21800D90E78 /* History */,
+				F4B61E3425A7F2EB005FC901 /* Feature */,
 				F4D0F59925A6CFD800D90E78 /* Application */,
-				F46799AB25A69AC100FF3BDE /* Home */,
-				F41B453425A5BD74000C0973 /* Views */,
 				F41B44F325A5B8F7000C0973 /* Main.storyboard */,
 				F41B44F625A5B8F9000C0973 /* Assets.xcassets */,
 				F41B44F825A5B8F9000C0973 /* LaunchScreen.storyboard */,
@@ -125,19 +139,12 @@
 			path = Lexus;
 			sourceTree = "<group>";
 		};
-		F41B453425A5BD74000C0973 /* Views */ = {
-			isa = PBXGroup;
-			children = (
-				F41B453525A5BD94000C0973 /* NumberCollectionViewCell.swift */,
-			);
-			path = Views;
-			sourceTree = "<group>";
-		};
 		F46799AB25A69AC100FF3BDE /* Home */ = {
 			isa = PBXGroup;
 			children = (
 				F46799A825A69A7300FF3BDE /* HomeCollectionViewController.swift */,
-				F41B44F125A5B8F7000C0973 /* SuperLottoViewController.swift */,
+				F41B44F125A5B8F7000C0973 /* LotteryViewController.swift */,
+				F4B61E5A25A7F751005FC901 /* experiment */,
 				F46799B125A69C5900FF3BDE /* Model */,
 				F46799AD25A69B6A00FF3BDE /* Views */,
 			);
@@ -147,7 +154,9 @@
 		F46799AD25A69B6A00FF3BDE /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				F41B453525A5BD94000C0973 /* NumberCollectionViewCell.swift */,
 				F46799AE25A69B7D00FF3BDE /* HomeItemCollectionViewCell.swift */,
+				F4B61E6E25A7FF73005FC901 /* MostViewedCollectionViewCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -162,6 +171,44 @@
 				F4D0F58025A6AC5300D90E78 /* HomeBillItem.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		F4B61E3425A7F2EB005FC901 /* Feature */ = {
+			isa = PBXGroup;
+			children = (
+				F4B61E3525A7F30A005FC901 /* Start */,
+				F4D0F5A525A6D21800D90E78 /* History */,
+				F46799AB25A69AC100FF3BDE /* Home */,
+			);
+			path = Feature;
+			sourceTree = "<group>";
+		};
+		F4B61E3525A7F30A005FC901 /* Start */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Start;
+			sourceTree = "<group>";
+		};
+		F4B61E3625A7F324005FC901 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				F4B61E3725A7F332005FC901 /* BaseViewController.swift */,
+				F4B61E5F25A7F7CF005FC901 /* BaseTableViewController.swift */,
+				F4B61E6225A7FE3F005FC901 /* BaseCollectionViewCell.swift */,
+				F4B61E6525A7FE59005FC901 /* BaseTableViewCell.swift */,
+				F4B61E6825A7FE79005FC901 /* CellProtocol.swift */,
+				F4B61E6B25A7FEFD005FC901 /* BaseModel.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		F4B61E5A25A7F751005FC901 /* experiment */ = {
+			isa = PBXGroup;
+			children = (
+				F4B61E5B25A7F76E005FC901 /* ExperimentViewController.swift */,
+			);
+			path = experiment;
 			sourceTree = "<group>";
 		};
 		F4D0F59925A6CFD800D90E78 /* Application */ = {
@@ -183,6 +230,7 @@
 		F4D0F59F25A6D06700D90E78 /* Service */ = {
 			isa = PBXGroup;
 			children = (
+				F4B61E3625A7F324005FC901 /* Base */,
 				F4D0F5A025A6D06F00D90E78 /* Extensions */,
 			);
 			path = Service;
@@ -200,7 +248,7 @@
 			isa = PBXGroup;
 			children = (
 				F4D0F5A625A6D26700D90E78 /* Model */,
-				F41B451225A5BB44000C0973 /* HistoryTableViewController.swift */,
+				F4B61E3B25A7F3A1005FC901 /* HistoryTableViewController.swift */,
 			);
 			path = History;
 			sourceTree = "<group>";
@@ -329,18 +377,26 @@
 			files = (
 				F4D0F5A825A6D3CF00D90E78 /* HistoryDataStore.swift in Sources */,
 				F4D0F5C625A6D5A400D90E78 /* LotteryType.swift in Sources */,
+				F4B61E6025A7F7CF005FC901 /* BaseTableViewController.swift in Sources */,
 				F46799A925A69A7300FF3BDE /* HomeCollectionViewController.swift in Sources */,
 				F41B453A25A5BE92000C0973 /* UIConstant.swift in Sources */,
 				F41B451625A5BB6E000C0973 /* OneAndOneTableViewController.swift in Sources */,
+				F4B61E6C25A7FEFD005FC901 /* BaseModel.swift in Sources */,
+				F4B61E6925A7FE79005FC901 /* CellProtocol.swift in Sources */,
+				F4B61E3825A7F332005FC901 /* BaseViewController.swift in Sources */,
 				F41B453625A5BD94000C0973 /* NumberCollectionViewCell.swift in Sources */,
+				F4B61E6325A7FE3F005FC901 /* BaseCollectionViewCell.swift in Sources */,
 				F4D0F58125A6AC5300D90E78 /* HomeBillItem.swift in Sources */,
 				F46799AF25A69B7D00FF3BDE /* HomeItemCollectionViewCell.swift in Sources */,
 				F4D0F5C325A6D56600D90E78 /* LotteryModel.swift in Sources */,
+				F4B61E6F25A7FF73005FC901 /* MostViewedCollectionViewCell.swift in Sources */,
 				F4D0F5A225A6D08400D90E78 /* UIKit+Extension.swift in Sources */,
-				F41B451325A5BB44000C0973 /* HistoryTableViewController.swift in Sources */,
-				F41B44F225A5B8F7000C0973 /* SuperLottoViewController.swift in Sources */,
+				F4B61E5C25A7F76E005FC901 /* ExperimentViewController.swift in Sources */,
+				F41B44F225A5B8F7000C0973 /* LotteryViewController.swift in Sources */,
 				F41B44EE25A5B8F7000C0973 /* AppDelegate.swift in Sources */,
+				F4B61E6625A7FE59005FC901 /* BaseTableViewCell.swift in Sources */,
 				F4D0F5C925A6D67500D90E78 /* LotteryItem.swift in Sources */,
+				F4B61E3C25A7F3A1005FC901 /* HistoryTableViewController.swift in Sources */,
 				F4D0F59C25A6CFF600D90E78 /* MyNavigationController.swift in Sources */,
 				F46799B325A69C6400FF3BDE /* HomeAdapter.swift in Sources */,
 				F41B44F025A5B8F7000C0973 /* SceneDelegate.swift in Sources */,

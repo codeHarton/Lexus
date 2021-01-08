@@ -7,6 +7,7 @@ PODS:
   - FDFullscreenPopGesture (1.1)
   - HandyJSON (5.0.2)
   - Kingfisher (6.0.1)
+  - MJRefresh (3.5.0)
   - MMKV (1.2.7):
     - MMKVCore (~> 1.2.7)
   - MMKVCore (1.2.7)
@@ -384,6 +385,7 @@ DEPENDENCIES:
   - FDFullscreenPopGesture
   - HandyJSON (~> 5.0.1)
   - Kingfisher (~> 6.0.1)
+  - MJRefresh
   - MMKV
   - Moya/RxSwift (~> 14.0)
   - pop
@@ -404,6 +406,7 @@ SPEC REPOS:
     - FDFullscreenPopGesture
     - HandyJSON
     - Kingfisher
+    - MJRefresh
     - MMKV
     - MMKVCore
     - Moya
@@ -435,6 +438,7 @@ SPEC CHECKSUMS:
   FDFullscreenPopGesture: a8a620179e3d9c40e8e00256dcee1c1a27c6d0f0
   HandyJSON: 9e4e236f5d2dbefad5155a77417bbea438201c03
   Kingfisher: adde87a4f74f6a3845395769354efff593581740
+  MJRefresh: 6afc955813966afb08305477dd7a0d9ad5e79a16
   MMKV: 22e5136f7d00197bc0fc9694b7f71519f0d1ca12
   MMKVCore: 607b7b05f2c2140056b5d338e45f2c14bf3f4232
   Moya: 5b45dacb75adb009f97fde91c204c1e565d31916
@@ -451,6 +455,6 @@ SPEC CHECKSUMS:
   SwiftyJSON: 36413e04c44ee145039d332b4f4e2d3e8d6c4db7
   YYKit: 7cda43304a8dc3696c449041e2cb3107b4e236e7
 
-PODFILE CHECKSUM: efd300ad06ffc26fa1ffb40cade1e11cdf2a4d0b
+PODFILE CHECKSUM: 892ffd8de860173e16445e8775f7fd297d2bba88
 
 COCOAPODS: 1.8.4

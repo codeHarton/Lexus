@@ -12,7 +12,7 @@ target 'Lexus' do
   pod 'SnapKit'
   pod 'Kingfisher','~> 6.0.1'
   pod 'QMUIKit',:git => "https://github.com/codeHarton/QMUI_iOS.git"
-  
+  pod 'MJRefresh'
   
   pod 'RxDataSources'
   pod 'Moya/RxSwift', '~> 14.0'

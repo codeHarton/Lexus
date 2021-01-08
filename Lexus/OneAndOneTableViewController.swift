@@ -7,7 +7,7 @@
 
 import UIKit
 
-class OneAndOneTableViewController: UIViewController {
+class OneAndOneTableViewController: BaseViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
