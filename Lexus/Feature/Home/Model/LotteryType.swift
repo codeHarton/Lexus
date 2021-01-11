@@ -17,6 +17,17 @@ public enum LotteryType : Int {
     
     case other = 3
     
+    var rate : Int32 {
+        switch self {
+        case .unionLotto:
+            return 17721088
+        case .superLotto:
+            return 21425712
+        default:
+            return 0
+        }
+    }
+    
     public init(rawValue : Int) {
         switch rawValue {
         case 0:

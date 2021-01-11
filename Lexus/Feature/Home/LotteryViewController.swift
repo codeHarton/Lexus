@@ -14,10 +14,8 @@ class LotteryViewController: UIViewController {
     @IBOutlet weak var collectionView : UICollectionView!
     
     public var billItem : HomeBillItem!
-    
-    let defaultRandomValue = 10000
-    
-    var randomCount = 0
+        
+    var randomCount : Int32 = 0
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -45,13 +43,16 @@ class LotteryViewController: UIViewController {
     
     ///快速机选10次
     @IBAction func fastRandom(){
-        DispatchQueue.main.async {
-            for _ in 0..<self.defaultRandomValue{
+        DispatchQueue.global().async {
+            for i in 0..<self.billItem.lotteryType.rate{
                 ///全部未选中
                 self.billItem.dataSource.forEach({$0.random()})
+                if 0 == (i % 10000) {
+                    print("当前到第 \(i / 10000)次")
+                }
             }
             DispatchQueue.main.async {
-                self.randomCount += self.defaultRandomValue
+                self.randomCount += self.billItem.lotteryType.rate
                 self._reload()
             }
         }
