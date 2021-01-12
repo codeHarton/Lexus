@@ -22,13 +22,15 @@
 		F46799B325A69C6400FF3BDE /* HomeAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F46799B225A69C6400FF3BDE /* HomeAdapter.swift */; };
 		F4B61E3825A7F332005FC901 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4B61E3725A7F332005FC901 /* BaseViewController.swift */; };
 		F4B61E3C25A7F3A1005FC901 /* HistoryTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4B61E3B25A7F3A1005FC901 /* HistoryTableViewController.swift */; };
-		F4B61E5C25A7F76E005FC901 /* ExperimentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4B61E5B25A7F76E005FC901 /* ExperimentViewController.swift */; };
 		F4B61E6025A7F7CF005FC901 /* BaseTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4B61E5F25A7F7CF005FC901 /* BaseTableViewController.swift */; };
 		F4B61E6325A7FE3F005FC901 /* BaseCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4B61E6225A7FE3F005FC901 /* BaseCollectionViewCell.swift */; };
 		F4B61E6625A7FE59005FC901 /* BaseTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4B61E6525A7FE59005FC901 /* BaseTableViewCell.swift */; };
 		F4B61E6925A7FE79005FC901 /* CellProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4B61E6825A7FE79005FC901 /* CellProtocol.swift */; };
 		F4B61E6C25A7FEFD005FC901 /* BaseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4B61E6B25A7FEFD005FC901 /* BaseModel.swift */; };
 		F4B61E6F25A7FF73005FC901 /* MostViewedCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4B61E6E25A7FF73005FC901 /* MostViewedCollectionViewCell.swift */; };
+		F4B6215E25AC20E3005FC901 /* ExperimentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4B6215D25AC20E3005FC901 /* ExperimentViewController.swift */; };
+		F4B6216225AC2D5E005FC901 /* LotteryStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4B6216125AC2D5E005FC901 /* LotteryStore.swift */; };
+		F4B6216525AC2E3B005FC901 /* BaseStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4B6216425AC2E3B005FC901 /* BaseStore.swift */; };
 		F4D0F58125A6AC5300D90E78 /* HomeBillItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4D0F58025A6AC5300D90E78 /* HomeBillItem.swift */; };
 		F4D0F59C25A6CFF600D90E78 /* MyNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4D0F59B25A6CFF600D90E78 /* MyNavigationController.swift */; };
 		F4D0F5A225A6D08400D90E78 /* UIKit+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4D0F5A125A6D08400D90E78 /* UIKit+Extension.swift */; };
@@ -57,13 +59,15 @@
 		F46799B225A69C6400FF3BDE /* HomeAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeAdapter.swift; sourceTree = "<group>"; };
 		F4B61E3725A7F332005FC901 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		F4B61E3B25A7F3A1005FC901 /* HistoryTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryTableViewController.swift; sourceTree = "<group>"; };
-		F4B61E5B25A7F76E005FC901 /* ExperimentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExperimentViewController.swift; sourceTree = "<group>"; };
 		F4B61E5F25A7F7CF005FC901 /* BaseTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTableViewController.swift; sourceTree = "<group>"; };
 		F4B61E6225A7FE3F005FC901 /* BaseCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseCollectionViewCell.swift; sourceTree = "<group>"; };
 		F4B61E6525A7FE59005FC901 /* BaseTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTableViewCell.swift; sourceTree = "<group>"; };
 		F4B61E6825A7FE79005FC901 /* CellProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellProtocol.swift; sourceTree = "<group>"; };
 		F4B61E6B25A7FEFD005FC901 /* BaseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseModel.swift; sourceTree = "<group>"; };
 		F4B61E6E25A7FF73005FC901 /* MostViewedCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MostViewedCollectionViewCell.swift; sourceTree = "<group>"; };
+		F4B6215D25AC20E3005FC901 /* ExperimentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExperimentViewController.swift; sourceTree = "<group>"; };
+		F4B6216125AC2D5E005FC901 /* LotteryStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LotteryStore.swift; sourceTree = "<group>"; };
+		F4B6216425AC2E3B005FC901 /* BaseStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseStore.swift; sourceTree = "<group>"; };
 		F4D0F58025A6AC5300D90E78 /* HomeBillItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeBillItem.swift; sourceTree = "<group>"; };
 		F4D0F59B25A6CFF600D90E78 /* MyNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyNavigationController.swift; sourceTree = "<group>"; };
 		F4D0F5A125A6D08400D90E78 /* UIKit+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIKit+Extension.swift"; sourceTree = "<group>"; };
@@ -206,9 +210,18 @@
 		F4B61E5A25A7F751005FC901 /* experiment */ = {
 			isa = PBXGroup;
 			children = (
-				F4B61E5B25A7F76E005FC901 /* ExperimentViewController.swift */,
+				F4B6215D25AC20E3005FC901 /* ExperimentViewController.swift */,
 			);
 			path = experiment;
+			sourceTree = "<group>";
+		};
+		F4B6216025AC2C0A005FC901 /* Store */ = {
+			isa = PBXGroup;
+			children = (
+				F4B6216425AC2E3B005FC901 /* BaseStore.swift */,
+				F4B6216125AC2D5E005FC901 /* LotteryStore.swift */,
+			);
+			path = Store;
 			sourceTree = "<group>";
 		};
 		F4D0F59925A6CFD800D90E78 /* Application */ = {
@@ -230,6 +243,7 @@
 		F4D0F59F25A6D06700D90E78 /* Service */ = {
 			isa = PBXGroup;
 			children = (
+				F4B6216025AC2C0A005FC901 /* Store */,
 				F4B61E3625A7F324005FC901 /* Base */,
 				F4D0F5A025A6D06F00D90E78 /* Extensions */,
 			);
@@ -375,8 +389,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F4B6215E25AC20E3005FC901 /* ExperimentViewController.swift in Sources */,
 				F4D0F5A825A6D3CF00D90E78 /* HistoryDataStore.swift in Sources */,
 				F4D0F5C625A6D5A400D90E78 /* LotteryType.swift in Sources */,
+				F4B6216225AC2D5E005FC901 /* LotteryStore.swift in Sources */,
 				F4B61E6025A7F7CF005FC901 /* BaseTableViewController.swift in Sources */,
 				F46799A925A69A7300FF3BDE /* HomeCollectionViewController.swift in Sources */,
 				F41B453A25A5BE92000C0973 /* UIConstant.swift in Sources */,
@@ -390,8 +406,8 @@
 				F46799AF25A69B7D00FF3BDE /* HomeItemCollectionViewCell.swift in Sources */,
 				F4D0F5C325A6D56600D90E78 /* LotteryModel.swift in Sources */,
 				F4B61E6F25A7FF73005FC901 /* MostViewedCollectionViewCell.swift in Sources */,
+				F4B6216525AC2E3B005FC901 /* BaseStore.swift in Sources */,
 				F4D0F5A225A6D08400D90E78 /* UIKit+Extension.swift in Sources */,
-				F4B61E5C25A7F76E005FC901 /* ExperimentViewController.swift in Sources */,
 				F41B44F225A5B8F7000C0973 /* LotteryViewController.swift in Sources */,
 				F41B44EE25A5B8F7000C0973 /* AppDelegate.swift in Sources */,
 				F4B61E6625A7FE59005FC901 /* BaseTableViewCell.swift in Sources */,
@@ -550,6 +566,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = LR54HTQ7KA;
 				INFOPLIST_FILE = Lexus/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -570,6 +587,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = LR54HTQ7KA;
 				INFOPLIST_FILE = Lexus/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

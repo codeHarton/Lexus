@@ -27,3 +27,23 @@ class LotteryModel {
         }
     }
 }
+
+enum LotteryItemKey : String {
+    case time = "time"
+    case red = "red"
+    case blue = "blue"
+}
+
+extension LotteryModel{
+    func value() ->[LotteryItemKey : Any]?{
+        var value : [LotteryItemKey : Any] = [:]
+        value[.time] = Date().description
+        if !reds.isEmpty {
+            value[.red] = self.reds.map{$0.value}.split(separator: 0)
+        }
+        if !blues.isEmpty {
+            value[.blue] = self.blues.map{$0.value}.split(separator: 0)
+        }
+        return value
+    }
+}

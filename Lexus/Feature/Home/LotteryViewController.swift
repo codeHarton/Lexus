@@ -17,10 +17,14 @@ class LotteryViewController: UIViewController {
         
     var randomCount : Int32 = 0
     
+    var randomValue : Int32 = 0
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         _initViews()
+        
+        self.randomValue = self.billItem.lotteryType.rate
         // Do any additional setup after loading the view.
     }
     
@@ -44,7 +48,7 @@ class LotteryViewController: UIViewController {
     ///快速机选10次
     @IBAction func fastRandom(){
         DispatchQueue.global().async {
-            for i in 0..<self.billItem.lotteryType.rate{
+            for i in 0..<self.randomValue{
                 ///全部未选中
                 self.billItem.dataSource.forEach({$0.random()})
                 if 0 == (i % 10000) {
@@ -52,7 +56,8 @@ class LotteryViewController: UIViewController {
                 }
             }
             DispatchQueue.main.async {
-                self.randomCount += self.billItem.lotteryType.rate
+                self.billItem.dataSource.forEach({$0.undo()})
+                self.randomCount += self.randomValue
                 self._reload()
             }
         }
@@ -92,6 +97,9 @@ extension LotteryViewController : UICollectionViewDelegate,UICollectionViewDataS
         if indexPath.section == self.billItem.dataSource.count {
             let cell = collectionView.dequeueReusableCell(withClass: MostViewedCollectionViewCell.self, for: indexPath)
             if 0 == indexPath.item {
+                cell.update(model: self.billItem.maxMinLotteryModel)
+                cell.flagTitle.text = "最佳组合"
+            }else if 1 == indexPath.item{
                 cell.update(model: self.billItem.maxLotteryModel)
                 cell.flagTitle.text = "出现频率最高的球"
             }else{

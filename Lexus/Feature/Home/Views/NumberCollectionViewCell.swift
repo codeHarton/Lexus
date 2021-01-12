@@ -6,7 +6,7 @@
 //
 
 import UIKit
-import YYKit
+import YYText
 import SwifterSwift
 import SnapKit
 class NumberCollectionViewCell: UICollectionViewCell {

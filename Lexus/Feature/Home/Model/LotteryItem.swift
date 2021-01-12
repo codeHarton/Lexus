@@ -49,9 +49,14 @@ public class LotteryItem : BaseModel {
 
 
 extension sectionItem{
+    
+    public func undo(){
+        self.forEach({$0.selected = false})
+    }
+    
     ///随机选择足够数量的球
     public func random(){
-        self.forEach({$0.selected = false})
+        self.undo()
         while !enough() {
             addRandomValue()
         }
@@ -61,9 +66,9 @@ extension sectionItem{
         self.filter{!$0.selected}.randomElement()?.selected = true
     }
     
-    private func enough() ->Bool{
+    public func enough() ->Bool{
         guard !isEmpty else {
-            return true
+            return false
         }
         return self.filter({$0.selected}).count >= dotType.enoughCount
     }

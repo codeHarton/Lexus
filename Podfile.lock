@@ -376,9 +376,23 @@ PODS:
   - SwifterSwift/SwiftStdlib (5.2.0)
   - SwifterSwift/UIKit (5.2.0)
   - SwiftyJSON (5.0.0)
-  - YYKit (1.0.9):
-    - YYKit/no-arc (= 1.0.9)
-  - YYKit/no-arc (1.0.9)
+  - YYAsyncLayer (1.0)
+  - YYCache (1.0.4)
+  - YYCategories (1.0.4):
+    - YYCategories/no-arc (= 1.0.4)
+  - YYCategories/no-arc (1.0.4)
+  - YYDispatchQueuePool (1.0)
+  - YYImage (1.0.4):
+    - YYImage/Core (= 1.0.4)
+  - YYImage/Core (1.0.4)
+  - YYImage/WebP (1.0.4):
+    - YYImage/Core
+  - YYKeyboardManager (1.0.1)
+  - YYModel (1.0.4)
+  - YYText (1.0.7)
+  - YYWebImage (1.0.5):
+    - YYCache
+    - YYImage
 
 DEPENDENCIES:
   - Charts
@@ -396,7 +410,16 @@ DEPENDENCIES:
   - SnapKit
   - SwifterSwift
   - SwiftyJSON
-  - YYKit
+  - YYAsyncLayer
+  - YYCache
+  - YYCategories
+  - YYDispatchQueuePool
+  - YYImage
+  - YYImage/WebP
+  - YYKeyboardManager
+  - YYModel
+  - YYText
+  - YYWebImage
 
 SPEC REPOS:
   https://github.com/CocoaPods/Specs.git:
@@ -420,7 +443,15 @@ SPEC REPOS:
     - SnapKit
     - SwifterSwift
     - SwiftyJSON
-    - YYKit
+    - YYAsyncLayer
+    - YYCache
+    - YYCategories
+    - YYDispatchQueuePool
+    - YYImage
+    - YYKeyboardManager
+    - YYModel
+    - YYText
+    - YYWebImage
 
 EXTERNAL SOURCES:
   QMUIKit:
@@ -453,8 +484,16 @@ SPEC CHECKSUMS:
   SnapKit: 97b92857e3df3a0c71833cce143274bf6ef8e5eb
   SwifterSwift: 334181863c416882d97b7a60c05054d9e4d799e2
   SwiftyJSON: 36413e04c44ee145039d332b4f4e2d3e8d6c4db7
-  YYKit: 7cda43304a8dc3696c449041e2cb3107b4e236e7
+  YYAsyncLayer: df6b01ebc695c5f6b4c15dd5c23fa3e081eb25c0
+  YYCache: 8105b6638f5e849296c71f331ff83891a4942952
+  YYCategories: 6bcd4314c6661a561410dce4a793379ebd306abd
+  YYDispatchQueuePool: 3dfb2274bcc74207688dde8ac6f7bdd46871dd7b
+  YYImage: 1e1b62a9997399593e4b9c4ecfbbabbf1d3f3b54
+  YYKeyboardManager: ff53d2e80d1808567a7f004028bd200d9469a89f
+  YYModel: 2a7fdd96aaa4b86a824e26d0c517de8928c04b30
+  YYText: 5c461d709e24d55a182d1441c41dc639a18a4849
+  YYWebImage: 5f7f36aee2ae293f016d418c7d6ba05c4863e928
 
-PODFILE CHECKSUM: 892ffd8de860173e16445e8775f7fd297d2bba88
+PODFILE CHECKSUM: ca67d8451aee29497d2dec2ad3768761a1f6f3ad
 
 COCOAPODS: 1.8.4

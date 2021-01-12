@@ -19,7 +19,6 @@ target 'Lexus' do
   pod 'SwifterSwift'
   pod 'MMKV'
   pod 'FDFullscreenPopGesture'
-  pod 'YYKit'
   pod 'RealmSwift','~>5.0.0'
   pod 'pop'
   pod 'Charts'
@@ -28,4 +27,19 @@ target 'Lexus' do
   
   #pod 'ssr-native',:git => "http://10.191.80.217/accelerator-yunfeng/ios-vpn/ssr-native.git"
   
+  
+  #pod 'YYKit'
+
+  
+  
+  pod 'YYModel'
+  pod 'YYImage'
+  pod 'YYCache'
+  pod 'YYWebImage'
+  pod 'YYText'
+  pod 'YYCategories'
+  pod 'YYAsyncLayer'
+  pod 'YYDispatchQueuePool'
+  pod 'YYKeyboardManager'
+  pod 'YYImage/WebP'
 end

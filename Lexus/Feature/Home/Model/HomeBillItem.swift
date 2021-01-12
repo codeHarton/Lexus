@@ -19,6 +19,9 @@ public class HomeBillItem : BaseModel{
     
     var minLotteryModel : LotteryModel?
     
+    ///根据最大最小值 去除 随机值
+    var maxMinLotteryModel : LotteryModel?
+
     let icon : String
     
     let title : String
@@ -54,6 +57,31 @@ public class HomeBillItem : BaseModel{
             self.maxLotteryModel = LotteryModel(type: lotteryType, reds: self.reds.sorted(by: \.appearCounts, with: >)[0..<reds.dotType.enoughCount], blues: self.blues.sorted(by: \.appearCounts, with: >)[0..<blues.dotType.enoughCount])
            
             self.minLotteryModel = LotteryModel(type: lotteryType, reds: self.reds.sorted(by: \.appearCounts, with: <)[0..<reds.dotType.enoughCount], blues: self.blues.sorted(by: \.appearCounts, with: <)[0..<blues.dotType.enoughCount])
+            
+            
+            let _reds = self.reds.sorted(by: \.appearCounts, with: >)[0..<reds.dotType.enoughCount] + self.reds.sorted(by: \.appearCounts, with: <)[0..<reds.dotType.enoughCount]
+            let _blues = self.blues.sorted(by: \.appearCounts, with: >)[0..<blues.dotType.enoughCount] + self.blues.sorted(by: \.appearCounts, with: <)[0..<blues.dotType.enoughCount]
+            
+            var __reds = sectionItem()
+            __reds.append(_reds.randomElement()!)
+            while __reds.count < __reds.dotType.enoughCount {
+                if let item = _reds.randomElement(){
+                    if !__reds.map({$0.value}).contains(item.value) {
+                        __reds.append(item)
+                    }
+                }
+                
+            }
+            var __blues = sectionItem()
+            __blues.append(_blues.randomElement()!)
+            while __blues.count < __blues.dotType.enoughCount {
+                if let item = _blues.randomElement(){
+                    if !__blues.contains(item) {
+                        __blues.append(item)
+                    }
+                }
+            }
+            self.maxMinLotteryModel = LotteryModel(type: lotteryType, reds: ArraySlice(__reds), blues: ArraySlice(__blues))
         }
         
         
@@ -75,7 +103,7 @@ extension HomeBillItem{
     
     public func numOfItemIn(section : Int) ->Int{
         if section == self.dataSource.count {
-            return 2
+            return 1//3
         }
         return self.dataSource[section].count
     }
