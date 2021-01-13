@@ -31,6 +31,7 @@
 		F4B6215E25AC20E3005FC901 /* ExperimentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4B6215D25AC20E3005FC901 /* ExperimentViewController.swift */; };
 		F4B6216225AC2D5E005FC901 /* LotteryStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4B6216125AC2D5E005FC901 /* LotteryStore.swift */; };
 		F4B6216525AC2E3B005FC901 /* BaseStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4B6216425AC2E3B005FC901 /* BaseStore.swift */; };
+		F4B6225525AD8ED3005FC901 /* TextureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4B6225425AD8ED3005FC901 /* TextureViewController.swift */; };
 		F4D0F58125A6AC5300D90E78 /* HomeBillItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4D0F58025A6AC5300D90E78 /* HomeBillItem.swift */; };
 		F4D0F59C25A6CFF600D90E78 /* MyNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4D0F59B25A6CFF600D90E78 /* MyNavigationController.swift */; };
 		F4D0F5A225A6D08400D90E78 /* UIKit+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4D0F5A125A6D08400D90E78 /* UIKit+Extension.swift */; };
@@ -68,6 +69,7 @@
 		F4B6215D25AC20E3005FC901 /* ExperimentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExperimentViewController.swift; sourceTree = "<group>"; };
 		F4B6216125AC2D5E005FC901 /* LotteryStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LotteryStore.swift; sourceTree = "<group>"; };
 		F4B6216425AC2E3B005FC901 /* BaseStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseStore.swift; sourceTree = "<group>"; };
+		F4B6225425AD8ED3005FC901 /* TextureViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextureViewController.swift; sourceTree = "<group>"; };
 		F4D0F58025A6AC5300D90E78 /* HomeBillItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeBillItem.swift; sourceTree = "<group>"; };
 		F4D0F59B25A6CFF600D90E78 /* MyNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyNavigationController.swift; sourceTree = "<group>"; };
 		F4D0F5A125A6D08400D90E78 /* UIKit+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIKit+Extension.swift"; sourceTree = "<group>"; };
@@ -180,6 +182,7 @@
 		F4B61E3425A7F2EB005FC901 /* Feature */ = {
 			isa = PBXGroup;
 			children = (
+				F4B6225325AD8EAD005FC901 /* Texture */,
 				F4B61E3525A7F30A005FC901 /* Start */,
 				F4D0F5A525A6D21800D90E78 /* History */,
 				F46799AB25A69AC100FF3BDE /* Home */,
@@ -222,6 +225,14 @@
 				F4B6216125AC2D5E005FC901 /* LotteryStore.swift */,
 			);
 			path = Store;
+			sourceTree = "<group>";
+		};
+		F4B6225325AD8EAD005FC901 /* Texture */ = {
+			isa = PBXGroup;
+			children = (
+				F4B6225425AD8ED3005FC901 /* TextureViewController.swift */,
+			);
+			path = Texture;
 			sourceTree = "<group>";
 		};
 		F4D0F59925A6CFD800D90E78 /* Application */ = {
@@ -391,6 +402,7 @@
 			files = (
 				F4B6215E25AC20E3005FC901 /* ExperimentViewController.swift in Sources */,
 				F4D0F5A825A6D3CF00D90E78 /* HistoryDataStore.swift in Sources */,
+				F4B6225525AD8ED3005FC901 /* TextureViewController.swift in Sources */,
 				F4D0F5C625A6D5A400D90E78 /* LotteryType.swift in Sources */,
 				F4B6216225AC2D5E005FC901 /* LotteryStore.swift in Sources */,
 				F4B61E6025A7F7CF005FC901 /* BaseTableViewController.swift in Sources */,

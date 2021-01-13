@@ -42,4 +42,5 @@ target 'Lexus' do
   pod 'YYDispatchQueuePool'
   pod 'YYKeyboardManager'
   pod 'YYImage/WebP'
+  pod 'Texture'
 end

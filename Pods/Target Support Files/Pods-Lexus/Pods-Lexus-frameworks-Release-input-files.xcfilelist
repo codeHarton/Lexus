@@ -9,6 +9,9 @@ ${BUILT_PRODUCTS_DIR}/MJRefresh/MJRefresh.framework
 ${BUILT_PRODUCTS_DIR}/MMKV/MMKV.framework
 ${BUILT_PRODUCTS_DIR}/MMKVCore/MMKVCore.framework
 ${BUILT_PRODUCTS_DIR}/Moya/Moya.framework
+${BUILT_PRODUCTS_DIR}/PINCache/PINCache.framework
+${BUILT_PRODUCTS_DIR}/PINOperation/PINOperation.framework
+${BUILT_PRODUCTS_DIR}/PINRemoteImage/PINRemoteImage.framework
 ${BUILT_PRODUCTS_DIR}/QMUIKit/QMUIKit.framework
 ${BUILT_PRODUCTS_DIR}/Realm/Realm.framework
 ${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework
@@ -19,6 +22,7 @@ ${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework
 ${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework
 ${BUILT_PRODUCTS_DIR}/SwifterSwift/SwifterSwift.framework
 ${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework
+${BUILT_PRODUCTS_DIR}/Texture/AsyncDisplayKit.framework
 ${BUILT_PRODUCTS_DIR}/YYAsyncLayer/YYAsyncLayer.framework
 ${BUILT_PRODUCTS_DIR}/YYCache/YYCache.framework
 ${BUILT_PRODUCTS_DIR}/YYCategories/YYCategories.framework

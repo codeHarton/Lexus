@@ -16,6 +16,21 @@ PODS:
   - Moya/RxSwift (14.0.0):
     - Moya/Core
     - RxSwift (~> 5.0)
+  - PINCache (3.0.3):
+    - PINCache/Arc-exception-safe (= 3.0.3)
+    - PINCache/Core (= 3.0.3)
+  - PINCache/Arc-exception-safe (3.0.3):
+    - PINCache/Core
+  - PINCache/Core (3.0.3):
+    - PINOperation (~> 1.2.1)
+  - PINOperation (1.2.1)
+  - PINRemoteImage/Core (3.0.3):
+    - PINOperation
+  - PINRemoteImage/iOS (3.0.3):
+    - PINRemoteImage/Core
+  - PINRemoteImage/PINCache (3.0.3):
+    - PINCache (~> 3.0.3)
+    - PINRemoteImage/Core
   - pop (1.0.12)
   - QMUIKit (4.2.1):
     - QMUIKit/QMUIComponents (= 4.2.1)
@@ -376,6 +391,26 @@ PODS:
   - SwifterSwift/SwiftStdlib (5.2.0)
   - SwifterSwift/UIKit (5.2.0)
   - SwiftyJSON (5.0.0)
+  - Texture (3.0.0):
+    - Texture/AssetsLibrary (= 3.0.0)
+    - Texture/Core (= 3.0.0)
+    - Texture/MapKit (= 3.0.0)
+    - Texture/Photos (= 3.0.0)
+    - Texture/PINRemoteImage (= 3.0.0)
+    - Texture/Video (= 3.0.0)
+  - Texture/AssetsLibrary (3.0.0):
+    - Texture/Core
+  - Texture/Core (3.0.0)
+  - Texture/MapKit (3.0.0):
+    - Texture/Core
+  - Texture/Photos (3.0.0):
+    - Texture/Core
+  - Texture/PINRemoteImage (3.0.0):
+    - PINRemoteImage/iOS (~> 3.0.0)
+    - PINRemoteImage/PINCache
+    - Texture/Core
+  - Texture/Video (3.0.0):
+    - Texture/Core
   - YYAsyncLayer (1.0)
   - YYCache (1.0.4)
   - YYCategories (1.0.4):
@@ -410,6 +445,7 @@ DEPENDENCIES:
   - SnapKit
   - SwifterSwift
   - SwiftyJSON
+  - Texture
   - YYAsyncLayer
   - YYCache
   - YYCategories
@@ -433,6 +469,9 @@ SPEC REPOS:
     - MMKV
     - MMKVCore
     - Moya
+    - PINCache
+    - PINOperation
+    - PINRemoteImage
     - pop
     - Realm
     - RealmSwift
@@ -443,6 +482,7 @@ SPEC REPOS:
     - SnapKit
     - SwifterSwift
     - SwiftyJSON
+    - Texture
     - YYAsyncLayer
     - YYCache
     - YYCategories
@@ -473,6 +513,9 @@ SPEC CHECKSUMS:
   MMKV: 22e5136f7d00197bc0fc9694b7f71519f0d1ca12
   MMKVCore: 607b7b05f2c2140056b5d338e45f2c14bf3f4232
   Moya: 5b45dacb75adb009f97fde91c204c1e565d31916
+  PINCache: 7a8fc1a691173d21dbddbf86cd515de6efa55086
+  PINOperation: 00c935935f1e8cf0d1e2d6b542e75b88fc3e5e20
+  PINRemoteImage: f1295b29f8c5e640e25335a1b2bd9d805171bd01
   pop: d582054913807fd11fd50bfe6a539d91c7e1a55a
   QMUIKit: 15294d6a350466e4a6f4df0333eac5bff474f995
   Realm: bfca1699b61b0b17c3a69ae0e648314eae91fbdb
@@ -484,6 +527,7 @@ SPEC CHECKSUMS:
   SnapKit: 97b92857e3df3a0c71833cce143274bf6ef8e5eb
   SwifterSwift: 334181863c416882d97b7a60c05054d9e4d799e2
   SwiftyJSON: 36413e04c44ee145039d332b4f4e2d3e8d6c4db7
+  Texture: 2f109e937850d94d1d07232041c9c7313ccddb81
   YYAsyncLayer: df6b01ebc695c5f6b4c15dd5c23fa3e081eb25c0
   YYCache: 8105b6638f5e849296c71f331ff83891a4942952
   YYCategories: 6bcd4314c6661a561410dce4a793379ebd306abd
@@ -494,6 +538,6 @@ SPEC CHECKSUMS:
   YYText: 5c461d709e24d55a182d1441c41dc639a18a4849
   YYWebImage: 5f7f36aee2ae293f016d418c7d6ba05c4863e928
 
-PODFILE CHECKSUM: ca67d8451aee29497d2dec2ad3768761a1f6f3ad
+PODFILE CHECKSUM: 82acef6a4a315018442b65702c2e7386c7588a14
 
 COCOAPODS: 1.8.4
