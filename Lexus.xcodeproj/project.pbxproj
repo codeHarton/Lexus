@@ -17,6 +17,8 @@
 		F41B451625A5BB6E000C0973 /* OneAndOneTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F41B451525A5BB6E000C0973 /* OneAndOneTableViewController.swift */; };
 		F41B453625A5BD94000C0973 /* NumberCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F41B453525A5BD94000C0973 /* NumberCollectionViewCell.swift */; };
 		F41B453A25A5BE92000C0973 /* UIConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = F41B453925A5BE92000C0973 /* UIConstant.swift */; };
+		F43627B625AE90B90009A721 /* StatisViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F43627B525AE90B90009A721 /* StatisViewController.swift */; };
+		F43627BB25AE924B0009A721 /* StatisModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F43627BA25AE924B0009A721 /* StatisModel.swift */; };
 		F46799A925A69A7300FF3BDE /* HomeCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F46799A825A69A7300FF3BDE /* HomeCollectionViewController.swift */; };
 		F46799AF25A69B7D00FF3BDE /* HomeItemCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F46799AE25A69B7D00FF3BDE /* HomeItemCollectionViewCell.swift */; };
 		F46799B325A69C6400FF3BDE /* HomeAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F46799B225A69C6400FF3BDE /* HomeAdapter.swift */; };
@@ -55,6 +57,8 @@
 		F41B451525A5BB6E000C0973 /* OneAndOneTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OneAndOneTableViewController.swift; sourceTree = "<group>"; };
 		F41B453525A5BD94000C0973 /* NumberCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberCollectionViewCell.swift; sourceTree = "<group>"; };
 		F41B453925A5BE92000C0973 /* UIConstant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIConstant.swift; sourceTree = "<group>"; };
+		F43627B525AE90B90009A721 /* StatisViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatisViewController.swift; sourceTree = "<group>"; };
+		F43627BA25AE924B0009A721 /* StatisModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatisModel.swift; sourceTree = "<group>"; };
 		F46799A825A69A7300FF3BDE /* HomeCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCollectionViewController.swift; sourceTree = "<group>"; };
 		F46799AE25A69B7D00FF3BDE /* HomeItemCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeItemCollectionViewCell.swift; sourceTree = "<group>"; };
 		F46799B225A69C6400FF3BDE /* HomeAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeAdapter.swift; sourceTree = "<group>"; };
@@ -145,9 +149,27 @@
 			path = Lexus;
 			sourceTree = "<group>";
 		};
+		F43627B425AE90AC0009A721 /* statis */ = {
+			isa = PBXGroup;
+			children = (
+				F43627B525AE90B90009A721 /* StatisViewController.swift */,
+				F43627B925AE92350009A721 /* Model */,
+			);
+			path = statis;
+			sourceTree = "<group>";
+		};
+		F43627B925AE92350009A721 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F43627BA25AE924B0009A721 /* StatisModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		F46799AB25A69AC100FF3BDE /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				F43627B425AE90AC0009A721 /* statis */,
 				F46799A825A69A7300FF3BDE /* HomeCollectionViewController.swift */,
 				F41B44F125A5B8F7000C0973 /* LotteryViewController.swift */,
 				F4B61E5A25A7F751005FC901 /* experiment */,
@@ -421,12 +443,14 @@
 				F4B6216525AC2E3B005FC901 /* BaseStore.swift in Sources */,
 				F4D0F5A225A6D08400D90E78 /* UIKit+Extension.swift in Sources */,
 				F41B44F225A5B8F7000C0973 /* LotteryViewController.swift in Sources */,
+				F43627BB25AE924B0009A721 /* StatisModel.swift in Sources */,
 				F41B44EE25A5B8F7000C0973 /* AppDelegate.swift in Sources */,
 				F4B61E6625A7FE59005FC901 /* BaseTableViewCell.swift in Sources */,
 				F4D0F5C925A6D67500D90E78 /* LotteryItem.swift in Sources */,
 				F4B61E3C25A7F3A1005FC901 /* HistoryTableViewController.swift in Sources */,
 				F4D0F59C25A6CFF600D90E78 /* MyNavigationController.swift in Sources */,
 				F46799B325A69C6400FF3BDE /* HomeAdapter.swift in Sources */,
+				F43627B625AE90B90009A721 /* StatisViewController.swift in Sources */,
 				F41B44F025A5B8F7000C0973 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -195,11 +195,28 @@
                     <connections>
                         <segue destination="BYZ-38-t0r" kind="push" identifier="LotteryViewController" id="8N2-HK-REB"/>
                         <segue destination="XIf-nY-A0I" kind="show" identifier="home_research" id="7Ux-CU-fr8"/>
+                        <segue destination="euy-s8-5Z3" kind="show" identifier="statis" id="IWF-0c-NFY"/>
                     </connections>
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gmJ-Mp-oah" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1678" y="-306"/>
+            <point key="canvasLocation" x="1483" y="-238"/>
+        </scene>
+        <!--Statis View Controller-->
+        <scene sceneID="OYp-ol-Tic">
+            <objects>
+                <viewController id="euy-s8-5Z3" customClass="StatisViewController" customModule="Lexus" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="bZM-R9-15h">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="ukW-TS-SfM"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Yqb-xU-97b"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LMf-jV-Os7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2139" y="-265"/>
         </scene>
         <!--Experiment View Controller-->
         <scene sceneID="8hT-Ar-XNb">
