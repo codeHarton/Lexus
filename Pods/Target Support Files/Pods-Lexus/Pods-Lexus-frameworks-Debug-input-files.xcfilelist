@@ -23,6 +23,7 @@ ${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework
 ${BUILT_PRODUCTS_DIR}/SwifterSwift/SwifterSwift.framework
 ${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework
 ${BUILT_PRODUCTS_DIR}/Texture/AsyncDisplayKit.framework
+${BUILT_PRODUCTS_DIR}/Toast/Toast.framework
 ${BUILT_PRODUCTS_DIR}/YYAsyncLayer/YYAsyncLayer.framework
 ${BUILT_PRODUCTS_DIR}/YYCache/YYCache.framework
 ${BUILT_PRODUCTS_DIR}/YYCategories/YYCategories.framework

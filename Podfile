@@ -43,4 +43,5 @@ target 'Lexus' do
   pod 'YYKeyboardManager'
   pod 'YYImage/WebP'
   pod 'Texture'
+  pod 'Toast'
 end

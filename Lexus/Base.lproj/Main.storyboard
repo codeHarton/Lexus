@@ -200,7 +200,7 @@
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gmJ-Mp-oah" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1483" y="-238"/>
+            <point key="canvasLocation" x="800" y="-163"/>
         </scene>
         <!--Statis View Controller-->
         <scene sceneID="OYp-ol-Tic">
@@ -209,14 +209,49 @@
                     <view key="view" contentMode="scaleToFill" id="bZM-R9-15h">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="20001" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="amu-2F-M9s">
+                                <rect key="frame" x="183" y="108" width="48.5" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xX1-q7-dcO">
+                                <rect key="frame" x="133" y="103.5" width="30" height="30"/>
+                                <color key="backgroundColor" red="0.86274509799999999" green="0.86666666670000003" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="-"/>
+                                <connections>
+                                    <action selector="minus" destination="euy-s8-5Z3" eventType="touchUpInside" id="OrJ-o0-lai"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fN1-vO-SEK">
+                                <rect key="frame" x="251.5" y="103.5" width="30" height="30"/>
+                                <color key="backgroundColor" systemColor="systemGreenColor"/>
+                                <state key="normal" title="+"/>
+                                <connections>
+                                    <action selector="plus" destination="euy-s8-5Z3" eventType="touchUpInside" id="GRC-JC-NOz"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="ukW-TS-SfM"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="amu-2F-M9s" firstAttribute="top" secondItem="ukW-TS-SfM" secondAttribute="top" constant="20" id="JKF-r4-reO"/>
+                            <constraint firstItem="amu-2F-M9s" firstAttribute="centerX" secondItem="bZM-R9-15h" secondAttribute="centerX" id="SML-nE-akh"/>
+                            <constraint firstItem="fN1-vO-SEK" firstAttribute="centerY" secondItem="xX1-q7-dcO" secondAttribute="centerY" id="Svq-vX-KpP"/>
+                            <constraint firstItem="amu-2F-M9s" firstAttribute="centerY" secondItem="xX1-q7-dcO" secondAttribute="centerY" id="ZZp-H3-BwU"/>
+                            <constraint firstItem="fN1-vO-SEK" firstAttribute="leading" secondItem="amu-2F-M9s" secondAttribute="trailing" constant="20" id="bcy-nM-s9O"/>
+                            <constraint firstItem="amu-2F-M9s" firstAttribute="leading" secondItem="xX1-q7-dcO" secondAttribute="trailing" constant="20" id="sEB-Hc-K3z"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="Yqb-xU-97b"/>
+                    <connections>
+                        <outlet property="textLabel" destination="amu-2F-M9s" id="s4t-0E-q2Y"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LMf-jV-Os7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2139" y="-265"/>
+            <point key="canvasLocation" x="1664" y="-228"/>
         </scene>
         <!--Experiment View Controller-->
         <scene sceneID="8hT-Ar-XNb">
@@ -295,6 +330,9 @@
     <resources>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
