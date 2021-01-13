@@ -5,6 +5,7 @@ PODS:
   - Charts/Core (3.6.0)
   - Differentiator (4.0.1)
   - FDFullscreenPopGesture (1.1)
+  - FTPopOverMenu_Swift (0.3.3)
   - HandyJSON (5.0.2)
   - Kingfisher (6.0.1)
   - MJRefresh (3.5.0)
@@ -433,6 +434,7 @@ PODS:
 DEPENDENCIES:
   - Charts
   - FDFullscreenPopGesture
+  - FTPopOverMenu_Swift
   - HandyJSON (~> 5.0.1)
   - Kingfisher (~> 6.0.1)
   - MJRefresh
@@ -465,6 +467,7 @@ SPEC REPOS:
     - Charts
     - Differentiator
     - FDFullscreenPopGesture
+    - FTPopOverMenu_Swift
     - HandyJSON
     - Kingfisher
     - MJRefresh
@@ -510,6 +513,7 @@ SPEC CHECKSUMS:
   Charts: b1e3a1f5a1c9ba5394438ca3b91bd8c9076310af
   Differentiator: 886080237d9f87f322641dedbc5be257061b0602
   FDFullscreenPopGesture: a8a620179e3d9c40e8e00256dcee1c1a27c6d0f0
+  FTPopOverMenu_Swift: 1effa730d18851c604b2937e9f956ea4b9782e4e
   HandyJSON: 9e4e236f5d2dbefad5155a77417bbea438201c03
   Kingfisher: adde87a4f74f6a3845395769354efff593581740
   MJRefresh: 6afc955813966afb08305477dd7a0d9ad5e79a16
@@ -542,6 +546,6 @@ SPEC CHECKSUMS:
   YYText: 5c461d709e24d55a182d1441c41dc639a18a4849
   YYWebImage: 5f7f36aee2ae293f016d418c7d6ba05c4863e928
 
-PODFILE CHECKSUM: 9f1c4e33644ffc29924c2c5bfe35791218e2ada5
+PODFILE CHECKSUM: a38c9e874a046e235e3d39db75b876b0128019f0
 
 COCOAPODS: 1.8.4

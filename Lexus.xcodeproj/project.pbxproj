@@ -19,6 +19,7 @@
 		F41B453A25A5BE92000C0973 /* UIConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = F41B453925A5BE92000C0973 /* UIConstant.swift */; };
 		F43627B625AE90B90009A721 /* StatisViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F43627B525AE90B90009A721 /* StatisViewController.swift */; };
 		F43627BB25AE924B0009A721 /* StatisModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F43627BA25AE924B0009A721 /* StatisModel.swift */; };
+		F43627E525AECFCD0009A721 /* LotterDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F43627E425AECFCD0009A721 /* LotterDetailViewController.swift */; };
 		F46799A925A69A7300FF3BDE /* HomeCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F46799A825A69A7300FF3BDE /* HomeCollectionViewController.swift */; };
 		F46799AF25A69B7D00FF3BDE /* HomeItemCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F46799AE25A69B7D00FF3BDE /* HomeItemCollectionViewCell.swift */; };
 		F46799B325A69C6400FF3BDE /* HomeAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F46799B225A69C6400FF3BDE /* HomeAdapter.swift */; };
@@ -59,6 +60,7 @@
 		F41B453925A5BE92000C0973 /* UIConstant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIConstant.swift; sourceTree = "<group>"; };
 		F43627B525AE90B90009A721 /* StatisViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatisViewController.swift; sourceTree = "<group>"; };
 		F43627BA25AE924B0009A721 /* StatisModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatisModel.swift; sourceTree = "<group>"; };
+		F43627E425AECFCD0009A721 /* LotterDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LotterDetailViewController.swift; sourceTree = "<group>"; };
 		F46799A825A69A7300FF3BDE /* HomeCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCollectionViewController.swift; sourceTree = "<group>"; };
 		F46799AE25A69B7D00FF3BDE /* HomeItemCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeItemCollectionViewCell.swift; sourceTree = "<group>"; };
 		F46799B225A69C6400FF3BDE /* HomeAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeAdapter.swift; sourceTree = "<group>"; };
@@ -153,6 +155,7 @@
 			isa = PBXGroup;
 			children = (
 				F43627B525AE90B90009A721 /* StatisViewController.swift */,
+				F43627E425AECFCD0009A721 /* LotterDetailViewController.swift */,
 				F43627B925AE92350009A721 /* Model */,
 			);
 			path = statis;
@@ -425,6 +428,7 @@
 				F4B6215E25AC20E3005FC901 /* ExperimentViewController.swift in Sources */,
 				F4D0F5A825A6D3CF00D90E78 /* HistoryDataStore.swift in Sources */,
 				F4B6225525AD8ED3005FC901 /* TextureViewController.swift in Sources */,
+				F43627E525AECFCD0009A721 /* LotterDetailViewController.swift in Sources */,
 				F4D0F5C625A6D5A400D90E78 /* LotteryType.swift in Sources */,
 				F4B6216225AC2D5E005FC901 /* LotteryStore.swift in Sources */,
 				F4B61E6025A7F7CF005FC901 /* BaseTableViewController.swift in Sources */,

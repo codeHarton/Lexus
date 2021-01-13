@@ -31,7 +31,7 @@ target 'Lexus' do
   #pod 'YYKit'
 
   
-  
+  pod 'FTPopOverMenu_Swift'
   pod 'YYModel'
   pod 'YYImage'
   pod 'YYCache'
