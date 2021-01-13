@@ -18,14 +18,14 @@ class StatisViewController: UITableViewController {
         super.viewDidLoad()
         self.tableView.register(cellWithClass: StatisNormalTableViewCell.self)
         self._select(type: 0)
-        self.tableView.rowHeight = 100
+        self.tableView.rowHeight = 88
         self.tableView.tableFooterView = UIView()
         self.tableView.separatorStyle = .none
     }
     
     ///选择类型
     @IBAction func selectType(){
-        FTPopOverMenu.showFromSenderFrame(senderFrame: CGRect(x: screenWidth - 110, y: statusBarHeight, width: 44, height: 44), with: ["0","1","2","3"]) {[weak self] (index) in
+        FTPopOverMenu.showFromSenderFrame(senderFrame: CGRect(x: screenWidth - 55, y: statusBarHeight, width: 44, height: 44), with: ["0","1","2","3"]) {[weak self] (index) in
             self?._select(type: index)
         }
     }

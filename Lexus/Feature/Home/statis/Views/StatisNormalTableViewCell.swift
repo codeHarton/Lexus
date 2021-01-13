@@ -27,7 +27,6 @@ class StatisNormalTableViewCell: BaseTableViewCell,CellProtocol {
     
     override func createUI() {
         selectionStyle = .none
-        
         self.contentView.addSubview(flagTitle)
         flagTitle.textColor = .black
         flagTitle.font = .systemFont(ofSize: 13)
