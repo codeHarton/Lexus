@@ -53,4 +53,10 @@ extension StatisViewController{
         cell.update(model: self.currentSource[indexPath.row])
         return cell
     }
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(identifier: "LotterDetailViewController") as! LotterDetailViewController
+        vc.count = self.currentSource[indexPath.row].issue
+        navigationController?.pushViewController(vc)
+    }
 }

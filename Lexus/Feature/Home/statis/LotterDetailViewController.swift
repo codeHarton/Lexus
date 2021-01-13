@@ -12,13 +12,12 @@ class LotterDetailViewController: BaseViewController {
 
     var webView : WKWebView!
     @IBOutlet weak var textLabel : UILabel!
-    var count = 0
+    public var count = 20001
     override func viewDidLoad() {
         super.viewDidLoad()
         
         self.title = "统计"
-        self.count = Int(self.textLabel.text!)!
-        
+        self.textLabel.text = String(count)
         let config = WKWebViewConfiguration()
         let preference = WKPreferences()
         preference.minimumFontSize = 30

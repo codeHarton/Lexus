@@ -51,6 +51,7 @@ class StatisNormalTableViewCell: BaseTableViewCell,CellProtocol {
         collectionView.delegate = self
         collectionView.dataSource = self
         collectionView.register(cellWithClass: MostViewedCollectionViewCell_cell.self)
+        collectionView.isUserInteractionEnabled = false 
     }
 }
 
