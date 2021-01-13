@@ -14,6 +14,8 @@ class StatisViewController: UITableViewController {
     
     private var currentSource : [StatisModel] = [StatisModel]()
     
+    private var index = 0
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.tableView.register(cellWithClass: StatisNormalTableViewCell.self)
@@ -31,6 +33,7 @@ class StatisViewController: UITableViewController {
     }
     
     private func _select(type : Int){
+        self.index = type
         if 0 == type {
             self.currentSource = StatisModel.allData
         }else{
@@ -40,6 +43,17 @@ class StatisViewController: UITableViewController {
     }
     
    
+    @IBAction func statisAction(){
+        performSegue(withIdentifier: "statisDetail", sender: self.index)
+    }
+    
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        guard let vc = segue.destination as? StatisDetailViewController else {
+            return
+        }
+        vc.type = self.index
+    }
 }
 extension StatisViewController{
     override func numberOfSections(in tableView: UITableView) -> Int {

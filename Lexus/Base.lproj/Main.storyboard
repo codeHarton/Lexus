@@ -234,11 +234,14 @@
                             </barButtonItem>
                             <barButtonItem image="statis_statis" id="qKy-pR-iN0">
                                 <connections>
-                                    <segue destination="IcG-HP-6wL" kind="show" id="vk8-ZE-cVH"/>
+                                    <action selector="statisAction" destination="F4t-BS-nI6" id="0Kt-XZ-Re2"/>
                                 </connections>
                             </barButtonItem>
                         </rightBarButtonItems>
                     </navigationItem>
+                    <connections>
+                        <segue destination="EiP-eC-CEC" kind="show" identifier="statisDetail" id="mCZ-Or-QTe"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VhR-OO-0em" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -295,6 +298,57 @@
             </objects>
             <point key="canvasLocation" x="446" y="-644"/>
         </scene>
+        <!--Statis Detail View Controller-->
+        <scene sceneID="PhD-c3-na4">
+            <objects>
+                <viewController id="EiP-eC-CEC" customClass="StatisDetailViewController" customModule="Lexus" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="V17-aM-4Fx">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="NCI-gY-p3G">
+                                <rect key="frame" x="0.0" y="88" width="414" height="725"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="OiP-ks-XIJ">
+                                    <size key="itemSize" width="128" height="128"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="anT-Cg-gmv">
+                                        <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="Pjb-fX-vIx">
+                                            <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </collectionViewCellContentView>
+                                    </collectionViewCell>
+                                </cells>
+                                <connections>
+                                    <outlet property="dataSource" destination="EiP-eC-CEC" id="pIp-CI-Md7"/>
+                                    <outlet property="delegate" destination="EiP-eC-CEC" id="rh9-Bc-k7K"/>
+                                </connections>
+                            </collectionView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Eas-Ul-nc0"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Eas-Ul-nc0" firstAttribute="bottom" secondItem="NCI-gY-p3G" secondAttribute="bottom" id="IJW-Ib-vTk"/>
+                            <constraint firstItem="Eas-Ul-nc0" firstAttribute="trailing" secondItem="NCI-gY-p3G" secondAttribute="trailing" id="SBA-6h-4VD"/>
+                            <constraint firstItem="NCI-gY-p3G" firstAttribute="leading" secondItem="Eas-Ul-nc0" secondAttribute="leading" id="VNq-ep-tz5"/>
+                            <constraint firstItem="NCI-gY-p3G" firstAttribute="top" secondItem="Eas-Ul-nc0" secondAttribute="top" id="p7w-t9-bEJ"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="yuW-4p-iBB"/>
+                    <connections>
+                        <outlet property="collectionView" destination="NCI-gY-p3G" id="JnX-yZ-SuL"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="G99-ZT-68q" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="229" y="-426"/>
+        </scene>
         <!--Experiment View Controller-->
         <scene sceneID="8hT-Ar-XNb">
             <objects>
@@ -329,22 +383,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7bF-Q1-ry9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-926" y="439"/>
-        </scene>
-        <!--统计-->
-        <scene sceneID="ZlC-B7-txb">
-            <objects>
-                <viewController id="IcG-HP-6wL" customClass="StatisDetailViewController" customModule="Lexus" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="71q-qJ-QRb">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <viewLayoutGuide key="safeArea" id="8WO-QG-OQc"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                    </view>
-                    <navigationItem key="navigationItem" title="统计" id="DKh-r9-TUd"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="xR1-y2-fjt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="201" y="172"/>
         </scene>
         <!--My Navigation Controller-->
         <scene sceneID="g4K-rx-8Kb">

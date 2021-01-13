@@ -103,7 +103,7 @@ extension HomeBillItem{
     
     public func numOfItemIn(section : Int) ->Int{
         if section == self.dataSource.count {
-            return 1//3
+            return 3
         }
         return self.dataSource[section].count
     }

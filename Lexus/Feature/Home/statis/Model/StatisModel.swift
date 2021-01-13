@@ -30,7 +30,12 @@ struct StatisModel {
         return "第\(type)号摇奖机 \(issue)"
     }
     
-    
+    var reds : [Int]{
+        return [red1,red2,red3,red4,red5]
+    }
+    var blues : [Int]{
+        return [blue1,blue2]
+    }
     
     
     var lotterModel : LotteryModel?{
