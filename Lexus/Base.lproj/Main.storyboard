@@ -76,7 +76,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-59" y="948"/>
+            <point key="canvasLocation" x="-926" y="1165"/>
         </scene>
         <!--History Table View Controller-->
         <scene sceneID="AbM-mC-IIM">
@@ -202,7 +202,7 @@
             </objects>
             <point key="canvasLocation" x="-1783" y="198"/>
         </scene>
-        <!--Title-->
+        <!--大乐透开奖历史-->
         <scene sceneID="0n2-Hh-Ng4">
             <objects>
                 <tableViewController id="F4t-BS-nI6" customClass="StatisViewController" customModule="Lexus" customModuleProvider="target" sceneMemberID="viewController">
@@ -225,16 +225,21 @@
                             <outlet property="delegate" destination="F4t-BS-nI6" id="zgE-9r-EAL"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Title" id="Bxv-ge-Jhw">
+                    <navigationItem key="navigationItem" title="大乐透开奖历史" id="Bxv-ge-Jhw">
                         <rightBarButtonItems>
-                            <barButtonItem title="Item" id="71v-Kf-GgO">
+                            <barButtonItem image="statis_detail" id="71v-Kf-GgO">
                                 <connections>
                                     <segue destination="euy-s8-5Z3" kind="show" id="rr2-59-8Fj"/>
                                 </connections>
                             </barButtonItem>
-                            <barButtonItem systemItem="edit" id="pGN-4S-FcF">
+                            <barButtonItem title="Item" image="exchangetype" id="pGN-4S-FcF">
                                 <connections>
                                     <action selector="selectType" destination="F4t-BS-nI6" id="HOU-QR-qzQ"/>
+                                </connections>
+                            </barButtonItem>
+                            <barButtonItem image="statis_statis" id="qKy-pR-iN0">
+                                <connections>
+                                    <segue destination="IcG-HP-6wL" kind="show" id="vk8-ZE-cVH"/>
                                 </connections>
                             </barButtonItem>
                         </rightBarButtonItems>
@@ -242,7 +247,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VhR-OO-0em" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1065" y="-453"/>
+            <point key="canvasLocation" x="-926" y="-263"/>
         </scene>
         <!--Lotter Detail View Controller-->
         <scene sceneID="OYp-ol-Tic">
@@ -293,7 +298,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LMf-jV-Os7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="804" y="-508"/>
+            <point key="canvasLocation" x="214" y="-546"/>
         </scene>
         <!--Experiment View Controller-->
         <scene sceneID="8hT-Ar-XNb">
@@ -328,7 +333,23 @@
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7bF-Q1-ry9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-704" y="354"/>
+            <point key="canvasLocation" x="-926" y="439"/>
+        </scene>
+        <!--统计-->
+        <scene sceneID="ZlC-B7-txb">
+            <objects>
+                <viewController id="IcG-HP-6wL" customClass="StatisDetailViewController" customModule="Lexus" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="71q-qJ-QRb">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="8WO-QG-OQc"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="统计" id="DKh-r9-TUd"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xR1-y2-fjt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="201" y="172"/>
         </scene>
         <!--My Navigation Controller-->
         <scene sceneID="g4K-rx-8Kb">
@@ -370,6 +391,9 @@
         </scene>
     </scenes>
     <resources>
+        <image name="exchangetype" width="24" height="24"/>
+        <image name="statis_detail" width="24" height="24"/>
+        <image name="statis_statis" width="24" height="24"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

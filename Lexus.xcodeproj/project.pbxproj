@@ -20,6 +20,8 @@
 		F43627B625AE90B90009A721 /* StatisViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F43627B525AE90B90009A721 /* StatisViewController.swift */; };
 		F43627BB25AE924B0009A721 /* StatisModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F43627BA25AE924B0009A721 /* StatisModel.swift */; };
 		F43627E525AECFCD0009A721 /* LotterDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F43627E425AECFCD0009A721 /* LotterDetailViewController.swift */; };
+		F436283525AEE2630009A721 /* StatisNormalTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F436283425AEE2630009A721 /* StatisNormalTableViewCell.swift */; };
+		F436283925AEE9130009A721 /* StatisDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F436283825AEE9130009A721 /* StatisDetailViewController.swift */; };
 		F46799A925A69A7300FF3BDE /* HomeCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F46799A825A69A7300FF3BDE /* HomeCollectionViewController.swift */; };
 		F46799AF25A69B7D00FF3BDE /* HomeItemCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F46799AE25A69B7D00FF3BDE /* HomeItemCollectionViewCell.swift */; };
 		F46799B325A69C6400FF3BDE /* HomeAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F46799B225A69C6400FF3BDE /* HomeAdapter.swift */; };
@@ -61,6 +63,8 @@
 		F43627B525AE90B90009A721 /* StatisViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatisViewController.swift; sourceTree = "<group>"; };
 		F43627BA25AE924B0009A721 /* StatisModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatisModel.swift; sourceTree = "<group>"; };
 		F43627E425AECFCD0009A721 /* LotterDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LotterDetailViewController.swift; sourceTree = "<group>"; };
+		F436283425AEE2630009A721 /* StatisNormalTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatisNormalTableViewCell.swift; sourceTree = "<group>"; };
+		F436283825AEE9130009A721 /* StatisDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatisDetailViewController.swift; sourceTree = "<group>"; };
 		F46799A825A69A7300FF3BDE /* HomeCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCollectionViewController.swift; sourceTree = "<group>"; };
 		F46799AE25A69B7D00FF3BDE /* HomeItemCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeItemCollectionViewCell.swift; sourceTree = "<group>"; };
 		F46799B225A69C6400FF3BDE /* HomeAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeAdapter.swift; sourceTree = "<group>"; };
@@ -154,8 +158,10 @@
 		F43627B425AE90AC0009A721 /* statis */ = {
 			isa = PBXGroup;
 			children = (
+				F436283325AEE2310009A721 /* Views */,
 				F43627B525AE90B90009A721 /* StatisViewController.swift */,
 				F43627E425AECFCD0009A721 /* LotterDetailViewController.swift */,
+				F436283825AEE9130009A721 /* StatisDetailViewController.swift */,
 				F43627B925AE92350009A721 /* Model */,
 			);
 			path = statis;
@@ -167,6 +173,14 @@
 				F43627BA25AE924B0009A721 /* StatisModel.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		F436283325AEE2310009A721 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F436283425AEE2630009A721 /* StatisNormalTableViewCell.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 		F46799AB25A69AC100FF3BDE /* Home */ = {
@@ -433,6 +447,7 @@
 				F4B6216225AC2D5E005FC901 /* LotteryStore.swift in Sources */,
 				F4B61E6025A7F7CF005FC901 /* BaseTableViewController.swift in Sources */,
 				F46799A925A69A7300FF3BDE /* HomeCollectionViewController.swift in Sources */,
+				F436283925AEE9130009A721 /* StatisDetailViewController.swift in Sources */,
 				F41B453A25A5BE92000C0973 /* UIConstant.swift in Sources */,
 				F41B451625A5BB6E000C0973 /* OneAndOneTableViewController.swift in Sources */,
 				F4B61E6C25A7FEFD005FC901 /* BaseModel.swift in Sources */,
@@ -455,6 +470,7 @@
 				F4D0F59C25A6CFF600D90E78 /* MyNavigationController.swift in Sources */,
 				F46799B325A69C6400FF3BDE /* HomeAdapter.swift in Sources */,
 				F43627B625AE90B90009A721 /* StatisViewController.swift in Sources */,
+				F436283525AEE2630009A721 /* StatisNormalTableViewCell.swift in Sources */,
 				F41B44F025A5B8F7000C0973 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

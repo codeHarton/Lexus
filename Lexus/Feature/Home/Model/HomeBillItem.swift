@@ -21,7 +21,7 @@ public class HomeBillItem : BaseModel{
     
     ///根据最大最小值 去除 随机值
     var maxMinLotteryModel : LotteryModel?
-
+    
     let icon : String
     
     let title : String
@@ -55,7 +55,7 @@ public class HomeBillItem : BaseModel{
         
         if !self.reds.isEmpty {
             self.maxLotteryModel = LotteryModel(type: lotteryType, reds: self.reds.sorted(by: \.appearCounts, with: >)[0..<reds.dotType.enoughCount], blues: self.blues.sorted(by: \.appearCounts, with: >)[0..<blues.dotType.enoughCount])
-           
+            
             self.minLotteryModel = LotteryModel(type: lotteryType, reds: self.reds.sorted(by: \.appearCounts, with: <)[0..<reds.dotType.enoughCount], blues: self.blues.sorted(by: \.appearCounts, with: <)[0..<blues.dotType.enoughCount])
             
             
@@ -87,7 +87,7 @@ public class HomeBillItem : BaseModel{
         
     }
     
-   
+    
     
 }
 

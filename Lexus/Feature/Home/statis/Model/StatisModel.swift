@@ -26,9 +26,26 @@ struct StatisModel {
     //摇奖套装
     var type : Int
     
+    var desc : String{
+        return "第\(type)号摇奖机 \(issue)"
+    }
     
     
     
+    
+    var lotterModel : LotteryModel?{
+        let reds = [red1,red2,red3,red4,red5].map { (index) -> LotteryItem in
+            let item = LotteryItem()
+            item.value = index
+            return item
+        }
+        let blues = [blue1,blue2].map { (index) -> LotteryItem in
+            let item = LotteryItem()
+            item.value = index
+            return item
+        }
+        return LotteryModel(type: .superLotto, reds: ArraySlice(reds), blues: ArraySlice(blues))
+    }
     
     
     

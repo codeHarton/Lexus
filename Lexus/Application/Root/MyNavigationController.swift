@@ -35,13 +35,7 @@ class MyNavigationController: UINavigationController {
     public class func _init(){
         let appearance = UINavigationBar.appearance(whenContainedInInstancesOf: [MyNavigationController.self])
         
-        appearance.barTintColor = .white
-        
-        appearance.titleTextAttributes = [NSAttributedString.Key.font : UIFont.systemFont(ofSize: 16),NSAttributedString.Key.foregroundColor : UIColor.black]
-        appearance.tintColor = UIColor.black
-        let image = UIImage(color: .white, size: CGSize(width: screenWidth, height: naviBarHeight))// is_iphonex ? UIImage(named: "appBar_normal") : UIImage(named: "appBar_x")
-        appearance.setBackgroundImage(image, for: .default)        
-     
+        appearance.titleTextAttributes = [NSAttributedString.Key.font : UIFont.boldSystemFont(ofSize: 16),NSAttributedString.Key.foregroundColor : UIColor.black]
 
     }
     
